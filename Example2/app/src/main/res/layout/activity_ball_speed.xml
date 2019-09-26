@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BallSpeed">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/textHighScore"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:text="Detected Speed: 0 [km/h]"
+            android:paddingTop="60dp"
+            android:textAlignment="center"
+            />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/textK"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="K:"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/editK"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0.11"
+            android:hint="value"/>
+
+        <TextView
+            android:id="@+id/textD"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="D:"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/editD"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:text="18.46"
+            android:inputType="number"
+            android:hint="value"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textRSSI"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:text=""
+            android:paddingTop="60dp"/>
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset" />
+
+        <TextView
+            android:id="@+id/whitespace"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:text=""
+            android:paddingTop="60dp"/>
+
+        <Button
+            android:id="@+id/buttonMainMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Menu" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
